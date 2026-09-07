@@ -1,6 +1,6 @@
-import './ViewSwitch.css';
+import './ViewSwitch.css'
 
-function ViewSwitch({ currentScreen, onChange }) {
+const ViewSwitch = ({ currentScreen, onChange })  => {
   return (
     <div className="view-switch">
       <button 
@@ -16,7 +16,7 @@ function ViewSwitch({ currentScreen, onChange }) {
         Статистика
       </button>
     </div>
-  );
+  )
 }
 
 export default ViewSwitch

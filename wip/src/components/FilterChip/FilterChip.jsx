@@ -1,6 +1,6 @@
-import './FilterChip.css';
+import './FilterChip.css'
 
-function FilterChip({ checked, onChange }) {
+const FilterChip = ({ checked, onChange }) => {
   return (
     <div className="filter-chip">
       <input 
@@ -14,7 +14,7 @@ function FilterChip({ checked, onChange }) {
         Только непрочитанные
       </label>
     </div>
-  );
+  )
 }
 
-export default FilterChip;
+export default FilterChip

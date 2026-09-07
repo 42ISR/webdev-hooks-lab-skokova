@@ -1,7 +1,7 @@
-import StatCard from '../StatCard/StatCard';
-import './StatsSummary.css';
+import StatCard from '../StatCard/StatCard'
+import './StatsSummary.css'
 
-function StatsSummary({ books }) {
+const StatsSummary = ({ books }) => {
   const total = books.length;
   const unread = books.filter(book => !book.read).length;
   const read = total - unread;
@@ -12,7 +12,7 @@ function StatsSummary({ books }) {
       <StatCard value={unread} label="Непрочитано" />
       <StatCard value={read} label="Прочитано" />
     </div>
-  );
+  )
 }
 
-export default StatsSummary;
+export default StatsSummary

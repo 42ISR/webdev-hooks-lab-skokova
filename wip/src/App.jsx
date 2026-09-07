@@ -3,7 +3,7 @@ import ViewSwitch from './components/ViewSwitch/ViewSwitch.jsx'
 import StatsScreen from './components/StatsScreen/StatsScreen.jsx'
 // import './App.css'
 
-function App() {
+const App = () => {
   const [currentScreen, setCurrentScreen] = useState('shelf');
   const [books, setBooks] = useState([
     { id: 1, title: 'Война и мир', author: 'Лев Толстой', isRead: false },
@@ -69,4 +69,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

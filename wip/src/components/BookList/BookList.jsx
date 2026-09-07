@@ -1,9 +1,9 @@
 import BookItem from '../BookItem/BookItem'
 import './BookList.css'
 
-function BookList({ books, onToggleRead, onDelete }) {
+const BookList = ({ books, onToggleRead, onDelete }) => {
   if (books.length === 0) {
-    return <div className="empty-note">Нет книг, подходящих под фильтр</div>;
+    return <div className="empty-note">Нет книг, подходящих под фильтр</div>
   }
 
   return (
@@ -17,7 +17,7 @@ function BookList({ books, onToggleRead, onDelete }) {
         />
       ))}
     </div>
-  );
+  )
 }
 
 export default BookList

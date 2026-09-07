@@ -1,6 +1,6 @@
-import './Checkbox.css';
+import './Checkbox.css'
 
-function Checkbox({ id, checked, onChange, label }) {
+const Checkbox = ({ id, checked, onChange, label }) => {
   return (
     <div className="checkbox-wrapper">
       <input
@@ -11,7 +11,7 @@ function Checkbox({ id, checked, onChange, label }) {
       />
       <label htmlFor={id}>{label}</label>
     </div>
-  );
+  )
 }
 
 export default Checkbox;

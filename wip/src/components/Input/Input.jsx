@@ -1,6 +1,6 @@
-import './Input.css';
+import './Input.css'
 
-function Input({ value, onChange, onKeyDown, placeholder }) {
+const Input = ({ value, onChange, onKeyDown, placeholder }) => {
   return (
     <input 
       className="input"
@@ -10,7 +10,7 @@ function Input({ value, onChange, onKeyDown, placeholder }) {
       onKeyDown={onKeyDown}
       placeholder={placeholder}
     />
-  );
+  )
 }
 
 export default Input;

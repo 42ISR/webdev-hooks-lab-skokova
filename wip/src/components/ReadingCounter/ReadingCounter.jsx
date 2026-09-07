@@ -1,7 +1,7 @@
-import Button from '../Button/Button';
-import './ReadingCounter.css';
+import Button from '../Button/Button'
+import './ReadingCounter.css'
 
-function ReadingCounter({ pagesToday, onIncrement, onDecrement, onReset }) {
+const ReadingCounter = ({ pagesToday, onIncrement, onDecrement, onReset }) => {
   return (
     <div className="session-card">
       <p className="session-title">Страниц прочитано сегодня</p>
@@ -15,7 +15,7 @@ function ReadingCounter({ pagesToday, onIncrement, onDecrement, onReset }) {
         Сбросить счётчик
       </Button>
     </div>
-  );
+  )
 }
 
-export default ReadingCounter;
+export default ReadingCounter
